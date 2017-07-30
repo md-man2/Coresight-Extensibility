@@ -9,6 +9,7 @@ Please keep in mind that this is a proof of concept, functionality is limited cu
 
 -Labels each of the trends with the name of the Child Element from which a contributing child attribute is pulled
  
+![stacked area chart](https://user-images.githubusercontent.com/25359105/28756443-4de76aac-753c-11e7-8a10-935d843322a5.jpg)
 
 
 ## Getting Started
