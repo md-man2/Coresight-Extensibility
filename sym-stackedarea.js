@@ -107,7 +107,7 @@
 			.done(function(response, textStatus, xhr){
 				// If we have a Rollup Analysis Output as the Attribute linked to this Trend lets get the Attributes it's rolling up
 				if(response.includes("Rollup")) {
-					// Because of a Web API bug we need to do a bunch of manipulation to the text we just got back to turn it into a JSON object
+					
 					var str = response.substr(response.indexOf('id="response">{') + 14);
 					str = str.substr(0, str.indexOf('</pre>'));
 					str = str.replace(/&quot;/g , '"');
