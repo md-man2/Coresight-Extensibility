@@ -1,4 +1,4 @@
-Background
+## Background
 
 Rollup analysis features in PI Asset Framework allow for simple and easy aggregation of data into a single data stream. While viewing this in PI Vision can be informative in its own right, I felt that the information could be more fully leveraged with a little creativity. With this in mind I’ve created a proof of concept PI Vision extensibility symbol which is able to take as input a rollup attribute sum into a trend and return a stacked area chart of the attributes which are being summed.
 Features
@@ -11,7 +11,7 @@ Please keep in mind that this is a proof of concept, functionality is limited cu
  
 
 
-Getting Started
+## Getting Started
 
 1.	Place the “sym-stackedarea.js” and “sym-stackedarea-template.html” files in the %pihome64%\PIVision\Scripts/app/editor/symbols/ext folder. Please create it if one does not exist
 2.	Select the new customer symbol added to the list in PI Vision
@@ -19,7 +19,7 @@ Getting Started
 
 
 
-Limitations
+## Limitations
 
 •	Due to limitations with the Web API, it is currently not possible to retrieve the associated attribute that an Analysis Rule is writing to, therefore the default Analysis Rule name of “Analysis1” was assumed. As a result, only Analyses with this name are capable of being retrieved. This enhancement request was brought to the attention of the Web API team
 
@@ -27,7 +27,7 @@ Limitations
 
 
 
-Future Enhancements
+## Future Enhancements
 
 •	This symbol currently only support Rollup Sums and excludes all other types, however it would be possible to have this customer symbol support Rollup Averages by scaling the area consumed by each to their contribution
 
@@ -39,7 +39,7 @@ Future Enhancements
 
 
 
-Technical Discussion
+## Technical Discussion
 
 In working on this symbol I drew upon resources found at the following two locations:
 1.	Implementing High Charts Symbols: https://github.com/osisoft/PI-Coresight-Custom-Symbols/tree/master/tutorials/timeserieschart 
